@@ -1,4 +1,4 @@
-package ru.trubin23.tasksmvpcontentproviders;
+package ru.trubin23.navigation;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
