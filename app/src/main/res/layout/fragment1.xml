@@ -13,4 +13,18 @@
         android:textSize="@dimen/fragment_label_text_size"
         android:text="@string/fragment_1" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/button_margin_top"
+        android:layout_marginStart="@dimen/button_back_margin_start"
+        android:text="@string/back" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/button_margin_top"
+        android:layout_marginStart="@dimen/button_next_margin_start"
+        android:text="@string/next" />
+
 </FrameLayout>

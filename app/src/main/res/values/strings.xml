@@ -3,4 +3,7 @@
     <string name="fragment_1">fragment_1</string>
     <string name="fragment_2">fragment_2</string>
     <string name="fragment_3">fragment_3</string>
+
+    <string name="back">back</string>
+    <string name="next">next</string>
 </resources>
