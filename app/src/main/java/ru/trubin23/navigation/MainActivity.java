@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements
 
     @Override
     public void onFragment1NextClick() {
-        mNavController.navigate(R.id.fragment2);
+        mNavController.navigate(R.id.action_fragment1_to_fragment2);
     }
 
     @Override
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements
 
     @Override
     public void onFragment2NextClick() {
-        mNavController.navigate(R.id.fragment3);
+        mNavController.navigate(R.id.action_fragment2_to_fragment3);
     }
 
     @Override
