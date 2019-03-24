@@ -12,7 +12,7 @@ import androidx.fragment.app.Fragment;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link Fragment3.OnFragmentInteractionListener} interface
+ * {@link Fragment3.OnFragment3Listener} interface
  * to handle interaction events.
  * Use the {@link Fragment3#newInstance} factory method to
  * create an instance of this fragment.
@@ -97,5 +97,12 @@ public class Fragment3 extends Fragment {
     public void onDetach() {
         super.onDetach();
         mListener = null;
+    }
+
+    interface OnFragment3Listener {
+
+        void onFragment3NextClick();
+
+        void onFragment3BackClick();
     }
 }

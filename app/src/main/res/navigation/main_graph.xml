@@ -27,5 +27,14 @@
         android:id="@+id/fragment3"
         android:name="ru.trubin23.navigation.Fragment3"
         android:label="fragment3"
-        tools:layout="@layout/fragment3" />
+        tools:layout="@layout/fragment3" >
+        <action
+            android:id="@+id/action_fragment3_to_secondActivity"
+            app:destination="@id/secondActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/secondActivity"
+        android:name="ru.trubin23.navigation.SecondActivity"
+        android:label="activity_second"
+        tools:layout="@layout/activity_second" />
 </navigation>

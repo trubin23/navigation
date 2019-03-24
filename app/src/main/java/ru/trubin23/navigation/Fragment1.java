@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link Fragment1.OnFragmentInteractionListener} interface
+ * {@link Fragment1.OnFragment1Listener} interface
  * to handle interaction events.
  * Use the {@link Fragment1#newInstance} factory method to
  * create an instance of this fragment.
@@ -97,5 +97,12 @@ public class Fragment1 extends Fragment {
     public void onDetach() {
         super.onDetach();
         mListener = null;
+    }
+
+    interface OnFragment1Listener {
+
+        void onFragment1NextClick();
+
+        void onFragment1BackClick();
     }
 }

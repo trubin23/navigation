@@ -1,13 +1,15 @@
 package ru.trubin23.navigation;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
-import android.os.Bundle;
-
 public class MainActivity extends AppCompatActivity implements
-        OnFragment1Listener, OnFragment2Listener , OnFragment3Listener{
+        Fragment1.OnFragment1Listener,
+        Fragment2.OnFragment2Listener,
+        Fragment3.OnFragment3Listener {
 
     NavController mNavController;
 
@@ -41,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements
 
     @Override
     public void onFragment3NextClick() {
-
+        mNavController.navigate(R.id.secondActivity);
     }
 
     @Override
