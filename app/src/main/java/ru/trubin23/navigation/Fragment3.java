@@ -60,6 +60,13 @@ public class Fragment3 extends Fragment {
             //mParam2 = getArguments().getString(ARG_PARAM2);
 
             Log.d("bundle", getArguments().toString());
+
+            Fragment3Args fragment3Args = Fragment3Args.fromBundle(getArguments());
+            Log.d("bundle", Integer.valueOf(fragment3Args.getArg3()).toString());
+            Log.d("bundle", Long.valueOf(fragment3Args.getArg4()).toString());
+            Log.d("bundle", Boolean.valueOf(fragment3Args.getArg5()).toString());
+            Log.d("bundle", fragment3Args.getArg6());
+            Log.d("bundle", Integer.valueOf(fragment3Args.getArg7()).toString());
         }
     }
 
