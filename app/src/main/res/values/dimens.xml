@@ -6,4 +6,6 @@
     <dimen name="button_back_margin_start">40dp</dimen>
     <dimen name="button_next_margin_start">160dp</dimen>
     <dimen name="button_margin_top">80dp</dimen>
+
+    <dimen name="some_size">20dp</dimen>
 </resources>

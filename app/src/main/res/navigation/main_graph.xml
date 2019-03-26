@@ -31,6 +31,27 @@
         <action
             android:id="@+id/action_fragment3_to_secondActivity"
             app:destination="@id/secondActivity" />
+        <argument
+            android:name="arg3"
+            app:argType="integer"
+            android:defaultValue="10" />
+        <argument
+            android:name="arg4"
+            app:argType="long"
+            android:defaultValue="99L" />
+        <argument
+            android:name="arg5"
+            app:argType="boolean"
+            android:defaultValue="true" />
+        <argument
+            android:name="arg6"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="default" />
+        <argument
+            android:name="arg7"
+            app:argType="reference"
+            android:defaultValue="@dimen/some_size" />
     </fragment>
     <activity
         android:id="@+id/secondActivity"

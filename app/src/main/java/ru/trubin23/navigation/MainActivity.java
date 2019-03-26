@@ -33,7 +33,11 @@ public class MainActivity extends AppCompatActivity implements
 
     @Override
     public void onFragment2NextClick() {
-        mNavController.navigate(R.id.action_fragment2_to_fragment3);
+        Bundle bundle = new Bundle();
+        bundle.putByte("arg1", Byte.valueOf("2"));
+        bundle.putFloat("arg2", 123.4567f);
+        bundle.putString("arg6", "replace default");
+        mNavController.navigate(R.id.action_fragment2_to_fragment3, bundle);
     }
 
     @Override
