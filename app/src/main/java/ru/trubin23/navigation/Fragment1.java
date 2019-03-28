@@ -4,6 +4,8 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -67,8 +69,8 @@ public class Fragment1 extends Fragment {
 
         root.findViewById(R.id.next).setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                mListener.onFragment1NextClick();
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.fragment2);
             }
         });
 

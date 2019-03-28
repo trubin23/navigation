@@ -4,6 +4,8 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -65,12 +67,9 @@ public class Fragment2 extends Fragment {
                              Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment2, container, false);
 
-        root.findViewById(R.id.next).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mListener.onFragment2NextClick();
-            }
-        });
+        root.findViewById(R.id.next).setOnClickListener(
+                Navigation.createNavigateOnClickListener(R.id.fragment3)
+        );
 
         root.findViewById(R.id.back).setOnClickListener(new View.OnClickListener() {
             @Override
